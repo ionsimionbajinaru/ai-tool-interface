@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Tool Interface</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h1>AI Tools</h1>
+          <button id="new-chat-btn" class="ghost-btn">+ New</button>
+        </div>
+        <nav>
+          <h2>History</h2>
+          <ul id="history-list" class="history-list"></ul>
+        </nav>
+      </aside>
+
+      <main class="chat-layout">
+        <header class="topbar">
+          <h2>AI Interface Starter</h2>
+          <p>Mocked responses for quick prototyping.</p>
+        </header>
+
+        <section id="results-panel" class="results-panel" aria-live="polite"></section>
+
+        <form id="chat-form" class="chat-input-panel">
+          <label for="prompt-input" class="sr-only">Enter your prompt</label>
+          <textarea
+            id="prompt-input"
+            name="prompt"
+            rows="1"
+            placeholder="Ask anything..."
+            required
+          ></textarea>
+          <button type="submit" class="send-btn">Send</button>
+        </form>
+      </main>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
